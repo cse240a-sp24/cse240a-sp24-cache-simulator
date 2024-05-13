@@ -10,9 +10,9 @@ We have given a framework for running the cache functions in `main.cpp`. You wil
 * You should implement both inclusive and non-inclusive L2 cache. For inclusive L2 cache, you can assume the back invalidation is instantaneous (no additional time overhead).
 
 ## Get Started
-Accept the assignment in Github Classroom.
+For this assignment, you should be working in a team of 2. Accept the assignment in Github Classroom.
 
-
+https://classroom.github.com/a/Em-t3_eO
 
 Once you have checked out this repository, start adding your code into this. To compile, run the following command from within the src directory: make all or make. This will compile your code and generate output files. You will also get a executable binary called "cache". 
 
@@ -52,7 +52,7 @@ You also need implement prefetching that enhance the performance of the cache ac
 - You're **allowed** to prefetch **one** additional cache line per memory access and you can assume the prefetching operation is instantaneous (the access time is not counted). 
 - You're **not allowed** to create additional storage (prefetch buffer) to store the prefetched data, but you can have some data structure to identity the prefetching pattern.
 
-The baseline prefetcher in the starter code is next line prefetcher, and you goal is to create a prefetcher that is better than this.
+The baseline prefetcher in the starter code is next line prefetcher, and you goal is to create a prefetcher that is better than this. You may need to check `main.cpp` to understand how we utilize the prefetcher.
 
 ## Traces
 
@@ -80,7 +80,7 @@ Sample Trace from bzip2.bz2:
 
 
 ## Academic Integrity
-This assignment is to be done individually by every student. Please make sure you do not copy a single line of code from any source. Not from other students, not from the web, not from anywhere. We have very sophisticated tools to discover if you did. This is a graduate class and we have the very highest expectations for integrity. You should expect that if you do so, even in very small amounts, you will be caught, you will be asked to leave the program, and if an international student, required to leave the country. 
+This assignment is to be in groups of up to two studetns. Please make sure you do not copy a single line of code from any source. Not from other students (other than your partner), not from the web, not from anywhere. We have very sophisticated tools to discover if you did. This is a graduate class and we have the very highest expectations for integrity. You should expect that if you do so, even in very small amounts, you will be caught, you will be asked to leave the program, and if an international student, required to leave the country.
 
 ## Turning it in
 We will be taking only your cache.cpp and cache.hpp files. You can add the entire repository, but you need to have a folder structure like the following at least:
