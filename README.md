@@ -44,7 +44,7 @@ The testing can be done using the traces given to you in the repository. There a
    * 64B block size
    * `./cache --icache=512:2:64:2 --dcache=256:4:64:2 --l2cache=16384:8:64:50 --memspeed=100`
 
-We have provided some output in `correctOutput`, which you can use to check your implementation. There will be some more hidden test cases which will test the simulator against some other configurations and other traces. 
+We have provided some output in `correctOutput`, which you can use to examine your implementation. There will be some more hidden test cases which will test the simulator against some other configurations and other traces. 
 
 ## Prefetching
 You also need implement prefetching that enhance the performance of the cache access. 
