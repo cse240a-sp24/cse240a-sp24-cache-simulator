@@ -52,7 +52,7 @@ You also need implement prefetching that enhance the performance of the cache ac
 - You're **allowed** to prefetch **one** additional cache line per memory access and you can assume the prefetching operation is instantaneous (the access time is not counted). 
 - You're **not allowed** to create additional storage (prefetch buffer) to store the prefetched data, but you can have some data structure to identity the prefetching pattern.
 
-The baseline prefetcher in the starter code is next line prefetcher, and you goal is to create a prefetcher that is better than this. You may need to check `main.cpp` to understand how we utilize the prefetcher.
+The baseline prefetcher in the starter code is next line prefetcher, and you goal is to create a prefetcher that is better than this. You may need to check `main.cpp` to know how we utilize the prefetcher.
 
 ## Traces
 
@@ -83,7 +83,21 @@ Sample Trace from bzip2.bz2:
 This assignment is to be in groups of up to two studetns. Please make sure you do not copy a single line of code from any source. Not from other students (other than your partner), not from the web, not from anywhere. We have very sophisticated tools to discover if you did. This is a graduate class and we have the very highest expectations for integrity. You should expect that if you do so, even in very small amounts, you will be caught, you will be asked to leave the program, and if an international student, required to leave the country.
 
 ## Turning it in
-We will be taking only your cache.cpp and cache.hpp files. You can add the entire repository, but you need to have a folder structure like the following at least:
+You need to submit a report for this assignment (70% of total grades). The report must include:
+
+* A link to your GitHub Repo.
+
+* A table that shows `Total Memory Penalties` on all 4 traces without prefeching. You should report results with inclusive and non-inclusive L2 for mips and alpha cache configurations.
+
+* How do you implement the LRU algorithm?
+
+* How does your prefetcher work?
+
+* A table that shows `Total Memory Penalties` on all 4 traces with next-line prefetcher and your custom prefetcher. You should report results with non-inclusive L2 for mips and alpha cache configurations.
+
+* For the Alpha A21264 cache configuration, how would the "Total Memory Penalties" change if we increase the set-associativity of the data cache (set it to be `1, 2, 4, 8, 16`) while maintaining all other configurations the same? Assume non-inclusive L2 and no prefetching. Use the simulation result to support your answer. Why don't we increase set-associativity in real processors?
+
+We will test your code on GitHub Repo (30% of total grades). The test result must match the result in your report. We may also test on some other configurations and other traces. We will be taking only your cache.cpp and cache.hpp files. You need to have a folder structure like the following at least:
 
 ```
 ├── 📂 src
@@ -91,4 +105,4 @@ We will be taking only your cache.cpp and cache.hpp files. You can add the entir
 |   ├── 📄 cache.hpp
 ```
 
-You can, of course, submit the entire repository, but we will look for only these files, and all the remaining files used will be our own. We will run the following commands for grading: `make clean` followed by `make`
+We will look for only these files and all the remaining files used will be our own. We will run the following commands for grading: `make clean` followed by `make`.
