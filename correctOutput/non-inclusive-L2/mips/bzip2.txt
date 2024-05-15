@@ -40,5 +40,5 @@ Cache Statistics:
   L2-cache miss rate:              99.98%
   avg L2-cache access time:       149.98 cycles
 Total Memory accesses:  20000000
-Total Memory penalties: 222402900
+Total Access Time: 222402900
 avg Memory access time:         11.12 cycles

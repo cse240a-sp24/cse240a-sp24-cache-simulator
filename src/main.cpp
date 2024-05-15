@@ -253,7 +253,7 @@ main(int argc, char *argv[])
   printCacheConfig();
   printCacheStats();
   printf("Total Memory accesses:  %lu\n", totalRefs);
-  printf("Total Memory penalties: %lu\n", totalPenalties);
+  printf("Total Access Time: %lu\n", totalPenalties);
   if (totalRefs > 0) {
     printf("avg Memory access time: %13.2f cycles\n",
         (double)totalPenalties / totalRefs);

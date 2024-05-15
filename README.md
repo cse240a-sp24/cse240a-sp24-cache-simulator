@@ -56,7 +56,7 @@ The baseline prefetcher in the starter code is next line prefetcher, and you goa
 
 ## Traces
 
-Your simulator will model a cache hierarchy based on traces of real programs.Each line in the trace file contains the program counter of the memory access instruction, the address of a memory access in hex as well as where the access should be directed, either to the I\$ (I) or D\$ (D), and either the access is READ (R) or WRITE (W).
+Your simulator will model a cache hierarchy based on traces of real programs. Each line in the trace file contains the program counter of the memory access instruction, the address of a memory access in hex as well as where the access should be directed, either to the I\$ (I) or D\$ (D), and either the access is READ (R) or WRITE (W).
 
 
 ```
@@ -87,15 +87,15 @@ You need to submit a report for this assignment (70% of total grades). The repor
 
 * A link to your GitHub Repo.
 
-* A table that shows "Total Memory Penalties" on all 4 traces without prefeching. You should report results with inclusive and non-inclusive L2 for mips and alpha cache configurations.
+* A table that shows "Total Access Time" on all 4 traces without prefeching. You should report results with inclusive and non-inclusive L2 for mips and alpha cache configurations.
 
 * How do you implement the LRU algorithm?
 
 * How does your prefetcher work?
 
-* A table that shows "Total Memory Penalties" on all 4 traces with next-line prefetcher and your custom prefetcher. You should report results with non-inclusive L2 for mips and alpha cache configurations.
+* A table that shows "Total Access Time" on all 4 traces with next-line prefetcher and your custom prefetcher. You should report results with non-inclusive L2 for mips and alpha cache configurations.
 
-* For the Alpha A21264 cache configuration, how would the "Total Memory Penalties" change if we increase the set-associativity of the data cache (set it to be 1, 2, 4, 8, 16) while maintaining all other configurations the same? Assume non-inclusive L2 and no prefetching. Use the simulation result to support your answer. Why don't we increase set-associativity in real processors?
+* For the Alpha A21264 cache configuration, how would the "Total Access Time" change if we increase the set-associativity of the data cache (set it to be 1, 2, 4, 8, 16) while maintaining total cache size the same? Assume non-inclusive L2 and no prefetching. Use the simulation result to support your answer. Why don't we increase set-associativity in real processors?
 
 We will test your code on GitHub Repo (30% of total grades). The test result must match the result in your report. We may also test on some other configurations and other traces. We will be taking only your cache.cpp and cache.hpp files. You need to have a folder structure like the following at least:
 
