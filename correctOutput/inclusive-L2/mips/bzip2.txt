@@ -25,20 +25,20 @@ Blocksize: 128 B
   Memspeed:   100 Cycles
 Cache Statistics:
   total I-cache accesses:     9846525
-  total I-cache misses:           828
-  total I-cache penalties:     118800
-  I-cache miss rate:                0.01%
-  avg I-cache access time:          2.01 cycles
+  total I-cache misses:          3372
+  total I-cache penalties:     500700
+  I-cache miss rate:                0.03%
+  avg I-cache access time:          2.05 cycles
   total D-cache accesses:    10153475
-  total D-cache misses:       1215376
-  total D-cache penalties:  182284900
-  D-cache miss rate:               11.97%
-  avg D-cache access time:         19.95 cycles
-  total L2-cache accesses:    1216204
-  total L2-cache misses:      1215935
-  total L2-cache penalties: 121593500
+  total D-cache misses:       1215895
+  total D-cache penalties:  182362450
+  D-cache miss rate:               11.98%
+  avg D-cache access time:         19.96 cycles
+  total L2-cache accesses:    1219267
+  total L2-cache misses:      1218998
+  total L2-cache penalties: 121899800
   L2-cache miss rate:              99.98%
   avg L2-cache access time:       149.98 cycles
 Total Memory accesses:  20000000
-Total Access Time: 222403700
-avg Memory access time:         11.12 cycles
+Total Memory penalties: 222863150
+avg Memory access time:         11.14 cycles
